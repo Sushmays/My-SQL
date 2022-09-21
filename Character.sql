@@ -18,29 +18,29 @@ noOfGods,created_at)VALUES(4,'RevanaSiddeswara','Ramanagara',11.40,5.30,1920,540
 INSERT INTO Temple(sl_no,GodName,Place,openTime,closeTime,year,pincode,
 noOfGods,created_at)VALUES(5,'Chamundi','Mysore',6.15,7.00,1925,5700012,6,now());
 
-SELECT concat(GodName,Place) from Temple;
-SELECT concat(GodName,year) from Temple;
-SELECT concat(GodName,pincode) from Temple;
+SELECT concat(GodName,Place) FROM Temple;
+SELECT concat(GodName,year) FROM Temple;
+SELECT concat(GodName,pincode) FROM Temple;
 
-SELECT upper(GodName) from Temple;
-SELECT upper(Place) from Temple;
-SELECT upper('Krishna') from Temple;
+SELECT upper(GodName) FROM Temple;
+SELECT upper(Place) FROM Temple;
+SELECT upper('Krishna') FROM Temple;
 
-SELECT lower(Place) from Temple;
-SELECT lower(GodName) from Temple;
-SELECT lower('Banashakri') from Temple;
+SELECT lower(Place) FROM Temple;
+SELECT lower(GodName) FROM Temple;
+SELECT lower('Banashakri') FROM Temple;
 
-SELECT instr(GodName, 'd') from Temple;
-SELECT instr(place, 'b') from Temple;
-SELECT instr(created_by, 's') from Temple;
+SELECT instr(GodName, 'd') FROM Temple;
+SELECT instr(place, 'b') FROM Temple;
+SELECT instr(created_by, 's') FROM Temple;
 
-Select substr(Place,1,6) from Temple;
-Select substr(GodName,1,4) from Temple;
-Select substr(created_by,1,4) from Temple;
+Select substr(Place,1,6) FROM Temple;
+Select substr(GodName,1,4) FROM Temple;
+Select substr(created_by,1,4) FROM Temple;
 
-select reverse(GodName) from Temple;
-select reverse(pincode) from Temple;
-select reverse(year) from Temple;
+select reverse(GodName) FROM Temple;
+select reverse(pincode) FROM Temple;
+select reverse(year) FROM Temple;
 
 SELECT Place FROM Temple WHERE Place LIKE 'b%';
 SELECT GodName FROM Temple WHERE GodName LIKE '%h';
